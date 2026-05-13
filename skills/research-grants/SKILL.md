@@ -1,6 +1,6 @@
 ---
 name: research-grants
-description: "Write competitive research proposals for NSF, NIH, DOE, and DARPA. Agency-specific formatting, review criteria, budget preparation, broader impacts, significance statements, innovation narratives, and compliance with submission requirements."
+description: "Write competitive research proposals for NSF, NIH, DOE, DARPA, and NASA ROSES. Agency-specific formatting, review criteria, budget preparation, broader impacts, significance statements, innovation narratives, and compliance with submission requirements."
 allowed-tools: [Read, Write, Edit, Bash]
 ---
 
@@ -8,14 +8,14 @@ allowed-tools: [Read, Write, Edit, Bash]
 
 ## Overview
 
-Research grant writing is the process of developing competitive funding proposals for federal agencies and foundations. Master agency-specific requirements, review criteria, narrative structure, budget preparation, and compliance for NSF (National Science Foundation), NIH (National Institutes of Health), DOE (Department of Energy), and DARPA (Defense Advanced Research Projects Agency) submissions.
+Research grant writing is the process of developing competitive funding proposals for federal agencies and foundations. Master agency-specific requirements, review criteria, narrative structure, budget preparation, and compliance for NSF (National Science Foundation), NIH (National Institutes of Health), DOE (Department of Energy), DARPA (Defense Advanced Research Projects Agency), and NASA ROSES (Research Opportunities in Space and Earth Sciences) submissions.
 
 **Critical Principle: Grants are persuasive documents that must simultaneously demonstrate scientific rigor, innovation, feasibility, and broader impact.** Each agency has distinct priorities, review criteria, formatting requirements, and strategic goals that must be addressed.
 
 ## When to Use This Skill
 
 This skill should be used when:
-- Writing research proposals for NSF, NIH, DOE, or DARPA programs
+- Writing research proposals for NSF, NIH, DOE, DARPA, or NASA ROSES programs
 - Preparing project descriptions, specific aims, or technical narratives
 - Developing broader impacts or significance statements
 - Creating research timelines and milestone plans
@@ -111,6 +111,25 @@ For detailed guidance on creating schematics, refer to the scientific-schematics
 - Teaming and collaboration often required
 - Varies dramatically by program manager and BAA (Broad Agency Announcement)
 
+### NASA ROSES (Research Opportunities in Space and Earth Sciences)
+**Mission**: Advance understanding of Earth, heliophysics, planetary science, and astrophysics through integrated observation, modeling, and application
+
+**Key Features**:
+- Annual omnibus solicitation with dozens of individual program elements
+- Earth science programs emphasize decision-support and end-user engagement
+- Application Readiness Level (ARL) framework for applied programs (ARL 1–9)
+- Dual Anonymous Peer Review (DAPR) required for many programs
+- Emphasis on NASA Earth Observation (EO) data integration
+- Transition plans for sustained use beyond project period
+- Earth Science to Action (ES2A) strategic alignment required
+- Engagement/co-development with identified end users is critical
+- Open Science and Data Management Plan (OSDMP) required
+- Varies by program element (A.08 Water Resources, A.09 Foundation Models, etc.)
+
+For detailed guidance, refer to:
+- `references/nasa_guidelines.md` — NASA ROSES structural guide, ARL framework, ES2A alignment, and high-level strategic insights
+- `references/nasa_lessons_learned.md` — recurring pitfalls and reviewer critique patterns distilled from prior submissions; consult **before drafting** and **during proposal review** as a pre-submission checklist
+
 ## Core Components of Research Proposals
 
 ### 1. Executive Summary / Project Summary / Abstract
@@ -124,6 +143,7 @@ Every proposal needs a concise overview that communicates the essential elements
 - NIH: 30 lines (Project Summary/Abstract)
 - DOE: Varies (typically 1 page)
 - DARPA: Varies (often 1-2 pages)
+- NASA: Varies by program element (typically embedded in S/T/M section)
 
 **Essential Elements**:
 - Clear statement of the problem or research question
@@ -187,7 +207,19 @@ The core technical narrative that presents the research plan in detail.
 - Team qualifications
 - Risk assessment and mitigation
 
+**NASA ROSES S/T/M Section** (typically 15 pages for applied programs):
+- Decision-Making Activity (DMA) with end-user identification
+- Anticipated results and improvements with ARL advancement
+- Background, significance, and applied research questions
+- Technical approach leveraging NASA EO data
+- ARL assessment (starting and ending levels with evidence)
+- Project risks and mitigation strategies
+- Transition plan for sustained operational use
+- Project management plan and timeline
+- Earth Science to Action (ES2A) alignment
+
 For detailed agency-specific guidance, refer to:
+- `references/nasa_guidelines.md`
 - `references/nsf_guidelines.md`
 - `references/nih_guidelines.md`
 - `references/doe_guidelines.md`
@@ -497,6 +529,18 @@ Develop realistic budgets that align with the proposed work and agency guideline
 - Often requires cost-plus or firm-fixed-price structures
 - Travel budget for program meetings
 
+**NASA ROSES**:
+- Full budget with narrative by institution and by year
+- GSA rates for travel per diem and lodging
+- Workshop costs with detailed justification (meals, incentives, materials)
+- Open-access publication fees ($2,000–$3,050 per article)
+- Computing costs (HPC, cloud, GPU) as separate line items
+- Data management costs (mandatory institutional curation)
+- End-user consultants at hourly rates ($100/hr typical)
+- Subaward budgets with institution-specific indirect cost rates
+- Table of Personnel and Work Effort required (months per year)
+- Inflation factors: ~3% personnel, ~2.3% other costs per year
+
 **Budget Justification Writing**:
 - Justify each line item in terms of the research plan
 - Explain effort percentages for personnel
@@ -588,6 +632,41 @@ Varies by program office, but generally includes:
 - **What if you succeed?** (Impact if the research works)
 - **What if you're right?** (Implications of your hypothesis)
 - **Who cares?** (Why it matters for national security)
+
+### NASA ROSES Review Criteria
+
+**Applied Science Programs** (A.08, A.09, etc.):
+
+1. **Decision-Making Relevance and End-User Engagement**
+   - Are the decision-making activities clearly identified and documented?
+   - Is the end user genuinely engaged with demonstrated commitment?
+   - Is there evidence of prior partnership (not just a letter of support)?
+
+2. **Scientific/Technical Merit**
+   - Is the approach technically sound and well-justified?
+   - Are NASA EO assets appropriately leveraged?
+   - Are preliminary results sufficient to demonstrate feasibility?
+
+3. **ARL Advancement and Transition**
+   - Is the starting ARL well-documented with evidence?
+   - Is the proposed ARL advancement realistic and clearly planned?
+   - Is the transition plan credible for sustained post-project use?
+
+4. **Project Management and Feasibility**
+   - Is the timeline realistic with clear milestones?
+   - Are risks identified and mitigation strategies adequate?
+   - Does the budget align with proposed activities?
+
+5. **Broader Value and Scalability**
+   - Is there potential for the approach to scale to other regions/users?
+   - Does the project align with NASA ES2A strategy and program priorities?
+   - Will the project yield reusable tools, datasets, or methods?
+
+**Key Questions NASA Reviewers Ask**:
+- **Who is the end user and do they need this?** (Documented decision-making gap)
+- **How does NASA EO data improve the decision?** (Specific, measurable improvement)
+- **Will this be used after the project ends?** (Credible transition and sustainability plan)
+- **What is the ARL evidence?** (Starting and ending levels with documentation)
 
 For detailed review criteria by agency, refer to `references/review_criteria.md`.
 
@@ -908,6 +987,8 @@ This skill includes comprehensive reference files covering specific aspects of g
 - `references/nih_guidelines.md`: NIH mechanisms, review criteria, and submission requirements
 - `references/doe_guidelines.md`: DOE programs, emphasis areas, and application procedures
 - `references/darpa_guidelines.md`: DARPA BAAs, program offices, and proposal strategies
+- `references/nasa_guidelines.md`: NASA ROSES program structure, ARL framework, DAPR, ES2A alignment, applied science proposal strategies (A.08, A.09, etc.), and high-level strategic insights distilled from prior submissions
+- `references/nasa_lessons_learned.md`: recurring pitfalls and reviewer critique patterns from prior NASA submissions (pre-submission checklist, top-10 reviewer critiques, section-by-section annotated guidance, Socratic self-review prompts)
 - `references/broader_impacts.md`: Strategies for compelling broader impacts statements
 - `references/specific_aims_guide.md`: Writing effective specific aims pages
 - `references/budget_preparation.md`: Budget development and justification
