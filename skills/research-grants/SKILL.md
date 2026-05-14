@@ -129,6 +129,7 @@ For detailed guidance on creating schematics, refer to the scientific-schematics
 For detailed guidance, refer to:
 - `references/nasa_guidelines.md` — NASA ROSES structural guide, ARL framework, ES2A alignment, and high-level strategic insights
 - `references/nasa_lessons_learned.md` — recurring pitfalls and reviewer critique patterns distilled from prior submissions; consult **before drafting** and **during proposal review** as a pre-submission checklist
+- `references/nasa_roses_a8_funded_patterns.md` — patterns synthesized from funded ROSES-2025 A.8 Water Resources Applications abstracts (12 recurring traits, section-by-section pattern map, NASA EO asset selection matrix, Type 1 vs Type 2 decision tree, pre-submission checklist, anonymized worked template); load **before drafting any NASA Applied-program abstract or S/T/M section** (A.8, A.9, A.36, A.37)
 
 ## Core Components of Research Proposals
 
@@ -989,6 +990,7 @@ This skill includes comprehensive reference files covering specific aspects of g
 - `references/darpa_guidelines.md`: DARPA BAAs, program offices, and proposal strategies
 - `references/nasa_guidelines.md`: NASA ROSES program structure, ARL framework, DAPR, ES2A alignment, applied science proposal strategies (A.08, A.09, etc.), and high-level strategic insights distilled from prior submissions
 - `references/nasa_lessons_learned.md`: recurring pitfalls and reviewer critique patterns from prior NASA submissions (pre-submission checklist, top-10 reviewer critiques, section-by-section annotated guidance, Socratic self-review prompts)
+- `references/nasa_roses_a8_funded_patterns.md`: 12 recurring traits, section-by-section pattern map, NASA EO asset selection matrix, Type 1 vs Type 2 decision tree, pre-submission checklist, and anonymized worked template — synthesized from funded ROSES-2025 A.8 Water Resources Applications abstracts; transfer well to A.9, A.36, A.37 and other Applied program elements
 - `references/broader_impacts.md`: Strategies for compelling broader impacts statements
 - `references/specific_aims_guide.md`: Writing effective specific aims pages
 - `references/budget_preparation.md`: Budget development and justification
