@@ -45,6 +45,22 @@ A proposal is not ready to submit until each of these is honestly answered "Yes.
 - [ ] Is the end user's **specific decision** described — not "water managers will use this" but "the [specific role] will use this output to decide whether to [specific action] within [specific time window]"?
 - [ ] Is engagement evidence (years of prior collaboration, signed MOU, IRB-approved interviews, prior workshops) **dated and concrete**, not aspirational?
 - [ ] Does the proposal describe **end users' direct involvement in evaluation and validation**, not just initial requirements? Reviewer pattern: "while [the intermediary] provides a credible partner, direct involvement of end users in evaluation and decision-making is not clearly defined."
+- [ ] Is the pathway from tool **output → end-user action** explicit? Reviewer pattern: "it is useful for understanding and forecasting … but the transition to making decisions to reduce those risks is not included." Naming a decision-maker is necessary but not sufficient — the proposal must describe what specific actions follow from the information.
+- [ ] Does the **dissemination plan** include end-user community channels (local/state/regional conferences, professional gatherings of the end-user community), not only academic venues? Reviewer pattern: "could be strengthened by mentioning local or state conferences or other events which could be helpful in dissemination."
+- [ ] Has **prior success working with this or similar end users** been explicitly described — not just stated, but with evidence of outcomes from prior collaborations?
+
+### Research Questions and Hypotheses
+- [ ] Are research questions **unique** (no accidental duplicates from copy-paste or revision drift)? Reviewer pattern: "of the four research questions, two are identical, suggesting that one of the intended questions was accidentally excluded."
+- [ ] Does **every research question** have a corresponding task or subsection that explicitly answers it? Reviewer pattern: "one of the four questions focuses on [topic]. The technical approach section does not mention how this question will be answered."
+- [ ] Does every research question have both **budget and team expertise** allocated to answer it? Reviewer pattern: "the survey which is needed to answer one of the research questions is not budgeted for, nor are there personnel with survey design and analysis expertise on the funded team."
+- [ ] Are **hypotheses stated explicitly** (not just open-ended research questions)? Reviewer pattern: "the proposal could also be improved by providing hypotheses."
+
+### Data Inputs and Domain Specifics
+- [ ] Is the chosen NASA EO product justified against **non-NASA domain-standard alternatives** in the same niche (e.g., MRMS, Stage IV, AORC for urban precipitation; HRRR for atmospheric forcing; OpenStreetMap or local LiDAR for urban structures)? Reviewer pattern: "it is not clear why the team did not propose to use products like [domain alternatives]. Some of these are hourly products, only slightly coarser … and they already have 1 km resolution."
+- [ ] If using **coarse EO products in a fine-scale application** (urban, hillslope, sub-basin), is there an explicit bias-correction and downscaling activity? Coarse-to-fine application without a downscaling task is a flagged weakness.
+- [ ] For **AI downscaling / super-resolution / generative models**, is the well-known failure mode of **extreme-event underestimation** explicitly addressed (e.g., via extreme-aware loss, tail-calibrated GAN/diffusion training, residual learning, conditional sampling)? Reviewer pattern: "downscaling via AI can lead to underestimation of extreme events. From the proposal, it is not clear how this would be addressed."
+- [ ] For **non-traditional data sources** (crowdsourced reports, citizen science, social media), is the collection methodology, accuracy validation, and prior-use evidence described? Reviewer pattern: "little detail is provided about the method for compiling [non-traditional] data … it would be helpful to know if the accuracy of the approach in the Co-PIs' past work indicates it is appropriate to use in practice without additional development and testing."
+- [ ] Are **physical input data** that materially drive model accuracy (bathymetry, urban structures, channel geometry, land cover, soil, DEM) explicitly specified for any physics-based model that depends on them? Reviewer pattern: "it is unclear how bathymetry and urban structures, which can substantially affect the output, will be considered in the … model."
 
 ### Performance Metrics
 - [ ] Is every quantitative target (resolution, latency, accuracy, lead time, efficiency multiplier) **explicitly justified** against the baseline? Numbers like "1000× speedup," "10 m resolution," "sub-hour latency," "85% accuracy" must each have a baseline-relative rationale.
@@ -72,10 +88,15 @@ A proposal is not ready to submit until each of these is honestly answered "Yes.
 - [ ] Does the **budget reconcile with the work plan**? Reviewer pattern: "the budget is also difficult to reconcile with the work plan." Each task should have visible personnel-month commitments matching its scope.
 - [ ] Do **task durations in the Gantt chart match the personnel effort table**?
 - [ ] Are forecast windows (e.g., 1-day, 3-day, 7-day outlooks) **aligned with the actual dynamics** of the hazard being forecast? Reviewer pattern: "the selected forecasting windows are not clearly aligned with shorter-timescale flash flood dynamics."
+- [ ] Does the **PI have visible funded time** (or is unfunded effort explicitly justified)? Reviewer pattern: "the PI appears to have no time funded on this project and it is not clear how much time they will devote."
+- [ ] Does **every budget line item have an unambiguous purpose** in the narrative? Reviewer pattern: "the purpose of $[X] for '[generic line item]' is unclear."
+- [ ] Are **workshops, stakeholder meetings, and engagement activities explicitly budgeted** — not merely promised in the narrative? Reviewer pattern: "funds are also not requested for holding workshops and stakeholder related activities."
+- [ ] Does the **risk-mitigation section avoid undercutting** the motivation for any component? Reviewer pattern: "the risk mitigation section notes that [the conditions that motivate component X] are unlikely." If the risk discussion argues the need for a deliverable is low, the deliverable's scientific motivation is weakened.
+- [ ] For **multi-component proposals**, is the readiness detail **uniform across all components**? Reviewer pattern: "varying levels of detail are provided about the readiness of existing technological components, raising questions about the current ARL." Uneven detail signals some components are less mature than claimed.
 
 ---
 
-## Top-10 Recurring Reviewer Critiques
+## Recurring Reviewer Critiques
 
 Each entry below is grounded in at least one panel summary; most appear across multiple proposals. The wording approximates the standard reviewer phrasing.
 
@@ -179,6 +200,69 @@ Each entry below is grounded in at least one panel summary; most appear across m
 - Distinguish **demonstrated scalability** (Year 2 transferability pilot) from **architectural scalability** (the design supports transfer, even if not demonstrated within the award).
 - Avoid phrases like "can be applied nationwide" unless the project will demonstrate national application.
 
+### 11. "Research questions and technical approach are misaligned"
+**Pattern.** Research questions are listed in the introduction but (a) one or more is duplicated due to copy-paste / revision drift, or (b) one or more is not addressed anywhere in the task plan, or (c) the answer appears only in a single throwaway sentence (often inside the transition plan).
+
+**Why reviewers flag it.** Reviewers cross-reference the research questions against the task descriptions. An unanswered RQ signals either a scoping error or a missing task; a duplicated RQ signals insufficient proofreading.
+
+**Mitigation.**
+- Build a **two-column RQ ↔ Task map** during drafting: every RQ has at least one task, every task answers at least part of one RQ.
+- Run a deliberate proofread pass on the RQ list before submission. Duplicates and orphans are visible at a glance.
+- If an RQ requires a method (survey, interview, content analysis) outside the core methodology, the task plan must include that activity *and* the budget must include the required expertise.
+
+### 12. "Pathway from tool output to end-user action is incomplete"
+**Pattern.** The proposal names a decision-making end user with appropriate authority, but the proposal stops at "the tool provides information"; it does not describe the specific actions that follow from that information.
+
+**Why reviewers flag it.** Type 2 NASA proposals must achieve operational deployment leading to water management actions. A proposal that improves understanding without enabling action does not meet the action-orientation criterion.
+
+**Mitigation.**
+- Describe end-user actions as **verbs**: issue an evacuation order, allocate maintenance budget, prioritize green-infrastructure investment, update zoning, trigger a warning, modify reservoir release schedule.
+- Include a Decision-to-Action paragraph: "When the output indicates X, the end user is authorized to take action Y within time window Z."
+- Show **prior success working with this or similar end users** — not as a sentence, but as evidence (named prior projects, outcomes, dates).
+
+### 13. "Choice of NASA EO product is not justified against domain-standard alternatives"
+**Pattern.** A NASA EO product is selected (e.g., IMERG for precipitation, MODIS for snow, SMAP for soil moisture) but non-NASA domain-standard alternatives (MRMS, Stage IV, AORC, HRRR, OpenStreetMap, local LiDAR) that may be more suitable for the application's spatial/temporal scale are not acknowledged.
+
+**Why reviewers flag it.** Domain reviewers know the alternatives. A proposal that defaults to NASA EO without comparing it to operational products in the same niche reads as either unfamiliar with the field or unwilling to use the best tool for the job. NASA reviewers want NASA assets *justified*, not assumed.
+
+**Mitigation.**
+- Add a short **EO product comparison paragraph or table**: candidate products, native resolution/latency, strengths, limitations for this use case, why the chosen product wins (or why a fusion is proposed).
+- If the chosen NASA product is coarser than alternatives, propose an explicit bias-correction or downscaling task — do not treat a coarse product as adequate without it.
+- For multi-source fusion, name the role of each product (e.g., NASA EO for spatial extent, MRMS for hourly intensity calibration).
+
+### 14. "AI/generative downscaling underestimates extremes"
+**Pattern.** A diffusion model, GAN, neural operator, or super-resolution network is proposed to downscale or generate precipitation / inundation / forecast fields. Reviewers know these architectures bias toward the training distribution mean and underestimate tail events — the exact regime that matters for flood and hazard applications.
+
+**Why reviewers flag it.** This is a known failure mode in the ML-for-Earth-science literature. A proposal that does not address it signals either unfamiliarity with the failure mode or an unaddressed risk.
+
+**Mitigation.**
+- Describe how the training **loss is tail-aware** (extreme-weighted loss, quantile loss, peak-over-threshold conditioning).
+- Describe how the **validation is tail-explicit**: report performance on extreme percentiles separately from overall accuracy; include peak-event case studies.
+- For generative models, describe how **conditional sampling** preserves tail mass (classifier-free guidance, conditional diffusion priors).
+- Cite prior work that addressed the same failure mode in a related domain.
+
+### 15. "Non-traditional data sources lack collection methodology and validation"
+**Pattern.** Crowdsourced reports, citizen science observations, social media data, or other non-traditional sources are used as ground truth or validation data, but the proposal does not specify how data are collected, deduplicated, geolocated, quality-controlled, and validated against authoritative observations.
+
+**Why reviewers flag it.** Non-traditional data are powerful but error-prone. A proposal that uses them without describing the curation pipeline assumes reviewers will trust the data quality on faith.
+
+**Mitigation.**
+- Describe the **collection pipeline**: source platforms, query terms, time/spatial filters, deduplication strategy, geocoding method.
+- Describe the **quality-control pipeline**: false-positive screening, cross-validation against authoritative observations, accuracy estimates from prior work.
+- Cite **prior team work** with the same data type — if available, show numerical accuracy metrics. If not, propose an explicit accuracy-assessment task and acknowledge it as a project risk.
+
+### 16. "Budget does not align with research questions or required expertise"
+**Pattern.** A research question requires a method (a survey, an interview series, a usability study, a specific computational resource) that has no budgeted funds or no named expert on the team.
+
+**Why reviewers flag it.** The budget is read as evidence of project commitment. An unfunded research question signals scope misalignment between intent and capability.
+
+**Mitigation.**
+- For every research question, identify: (a) the task that answers it, (b) the personnel (named or role) executing it, (c) the budget line that funds it.
+- If an RQ requires expertise outside the core team (survey design, social science, GIS, communication), add a Co-I, consultant, or subcontract that brings that expertise — and budget for it.
+- Ensure **PI has visible funded time**. Zero PI funded time invites questions about commitment and engagement intensity.
+- Ensure **workshops, stakeholder meetings, and engagement activities are line items**, not just narrative promises.
+- Avoid **vague line items** ("Assessments — $X"). Each line should be reconstructable from the narrative.
+
 ---
 
 ## Section-by-Section Annotated Guidance
@@ -203,6 +287,18 @@ Each entry below is grounded in at least one panel summary; most appear across m
 - **Improvement vs. baseline.** If the comparison product is FEMA flood maps, the National Water Model, an empirical regression, or a published benchmark, name it explicitly and describe its specific limitations.
 
 **Pitfall.** Phrasing like "significant improvement" or "dramatically reduces" without numbers will be flagged. Replace with deltas.
+
+### Research Questions and Hypotheses
+
+**What has worked.** Concise, numbered research questions tied to the decision-making activity, where each question maps cleanly to one or more tasks.
+
+**What to watch for.**
+- **Duplicates and orphans.** Proofread the RQ list: every question must be unique and every question must be answered somewhere in the task plan. Reviewer pattern: "of the four research questions, two are identical."
+- **Methodology-orphan RQs.** A research question whose answer requires a method not in the task plan (a survey, a content analysis, a usability study, a panel of interviews) signals scope misalignment. Either drop the RQ or add the task.
+- **Budget- and expertise-orphan RQs.** Every RQ must have funded effort and named expertise behind it. An RQ that requires social-science survey design without a social scientist on the team will be flagged.
+- **Hypothesis absence.** Open-ended research questions ("How can X improve Y?") are weaker than testable hypotheses ("X reduces Y by at least Z under conditions W"). Reviewer pattern: "the proposal could also be improved by providing hypotheses."
+
+**Pitfall.** Allowing one RQ to be answered only in a single sentence inside the Transition Plan — this signals that the RQ is decorative rather than driving the project.
 
 ### Background, Motivation, and Significance
 
@@ -236,6 +332,11 @@ Each entry below is grounded in at least one panel summary; most appear across m
 - **Buzzword density vs. specificity.** A paragraph that contains LoRA, Swin-shifts, FSDP, Hierarchical ViT, multi-scale patch embeddings, super-resolution decoders, and inter-sensor cross-calibration without specifying configurations will read as showmanship.
 - **Each technique needs a decision rationale.** "Why LoRA and not full fine-tuning?" "Why Swin-shifts and not vanilla attention?" — answer these in one sentence each.
 - **End-to-end timing budget.** If the proposal claims sub-hour latency, walk through the data-ingest → preprocessing → inference → post-processing → publication pipeline and state where the minutes go.
+- **EO product justification vs. domain-standard alternatives.** When a NASA EO product is chosen, briefly compare it to non-NASA domain-standard products in the same niche (e.g., MRMS / Stage IV / AORC for urban precipitation; HRRR for atmospheric forcing). Domain reviewers know these alternatives and notice when they are not addressed.
+- **Coarse-to-fine application.** Using a coarse EO product in a fine-scale (urban / hillslope / sub-basin) application without an explicit bias-correction or downscaling task is a flagged weakness.
+- **AI-downscaling extreme-event behavior.** Generative / super-resolution / neural-operator approaches to precipitation, inundation, or forecast downscaling are known to underestimate tail events. Explicitly describe tail-aware loss design, tail-explicit validation, and prior work demonstrating the failure mode is addressed.
+- **Non-traditional data pipelines.** Crowdsourced, citizen-science, or social-media data must come with a described collection pipeline, deduplication and geocoding strategy, accuracy assessment, and prior-use evidence.
+- **Physical input data specificity.** For physics-based hydrodynamic, hydrologic, or slope-stability models: name the bathymetry source, urban-structure / building-footprint source, DEM source, soil and land-cover layers. Reviewers know which inputs dominate output error and check that they are specified.
 
 **Pitfall.** Treating the in-house model family (CREST family, EF5, iCRESLIDE) as the obvious choice without re-justifying it for each new use case. Reviewers outside the immediate community do not share this assumption.
 
@@ -252,6 +353,8 @@ Each entry below is grounded in at least one panel summary; most appear across m
 ### Project Risks and Mitigation
 
 **What has worked.** A structured risk table with Likelihood / Impact / Mitigation columns.
+
+**Critical anti-pattern: do not undercut your own components.** If the risk discussion argues that a triggering condition is unlikely (e.g., "the computational demands of the physics-based model necessitating a surrogate are unlikely"), reviewers will use that argument against the motivation for the surrogate itself. Reviewer pattern: "the risk mitigation section notes that [the conditions motivating component X] are unlikely." Either re-frame the risk so it does not contradict the headline motivation, or remove the contradiction.
 
 **What to watch for.**
 - **Quality, not quantity.** Listing 8 risks with shallow mitigations is weaker than listing 4 risks with credible mitigations.
@@ -283,6 +386,16 @@ Each entry below is grounded in at least one panel summary; most appear across m
 - **Budget-schedule consistency.** Reviewer pattern: "the budget is difficult to reconcile with the work plan." Personnel effort in the budget should sum to plausible task delivery.
 - **Single PI doing everything.** If the PI leads 5 of 7 tasks and only 9 calendar months are allocated, reviewers do the math.
 - **Co-I role specificity.** Each Co-I should have a named role tied to specific tasks, not just a domain label.
+- **PI funded time.** PI should have visible funded effort. Zero funded time invites questions about commitment and engagement intensity — reviewer pattern: "the PI appears to have no time funded on this project and it is not clear how much time they will devote."
+- **Budget line specificity.** Avoid vague line items like "Assessments — $X." Each line should be reconstructable from the narrative. Reviewer pattern: "the purpose of $[X] for '[generic line item]' is unclear."
+- **Workshop and stakeholder activities must be budgeted.** Engagement promises in the narrative without a corresponding budget line are flagged. Reviewer pattern: "funds are also not requested for holding workshops and stakeholder related activities."
+- **RQ ↔ budget ↔ expertise mapping.** Every research question must have an answering task, funded effort, and named expertise. A research question requiring a survey, with no survey-design expert and no survey budget, is a flagged inconsistency.
+
+### Dissemination Plan (often folded into Transition or Outreach)
+
+**What to watch for.** Dissemination plans dominated by academic publications (journal papers, conferences like AGU/EGU) without mention of end-user-community channels (local/state/regional conferences, professional gatherings of emergency managers, water utility associations, planner conferences) are read as not targeting the people who would actually use the outputs. Reviewer pattern: "could be strengthened by mentioning local or state conferences or other events which could be helpful in dissemination."
+
+**Mitigation.** Add a dissemination paragraph listing: (a) academic venues, (b) end-user community venues by name, (c) trade-press / practitioner-press outlets, (d) the team's standing in these communities (prior talks, board memberships, ongoing collaborations).
 
 ---
 
@@ -347,6 +460,26 @@ Historical pitfall (carries forward): claiming prior application to a region or 
 
 **Mitigation.** If a prior application is mentioned, show one figure of the result. If no figure is available, cite a publication that contains it.
 
+### The "Self-Undercutting Risk Section" Pattern
+A risk-mitigation section argues that a specific challenge is unlikely to materialize — but that challenge is exactly the motivation for a major component of the project. Reviewers use the team's own argument against the deliverable. Example pattern: a surrogate model is proposed to handle computational demands; the risk section then argues that computational demands are unlikely to be a problem.
+
+**Mitigation.** Audit the risk section against the project's stated motivations. If any risk discussion undercuts the rationale for a deliverable, re-frame the risk (focus on a different failure mode) or re-frame the deliverable's justification (different primary motivation).
+
+### The "Uneven Readiness Across Components" Pattern
+Multi-component Type 2 proposals frequently describe one or two components in rich detail (preliminary results, validation history, demonstrated partnerships) while other components are described at a high level with no comparable evidence. Reviewers infer that the unevidenced components are less mature than the headline ARL claim suggests. Reviewer pattern: "varying levels of detail are provided about the readiness of existing technological components, raising questions about the current ARL."
+
+**Mitigation.** For each component, provide: starting maturity evidence, prior validation, and the bridging activity that advances it. If a component is genuinely less mature, acknowledge it and propose an earlier-stage task; do not paper over the gap.
+
+### The "Information without Action" Pattern
+The proposal names a decision-making end user with statutory authority. The DMA section describes the decisions they make. But the tool outputs are presented as "information" or "understanding" rather than as inputs to a specific action. Reviewer pattern: "it is useful for understanding and forecasting … but the transition to making decisions to reduce those risks is not included."
+
+**Mitigation.** For each tool output, write a Decision-to-Action sentence: "When the output indicates X, the end user is authorized to take action Y within time window Z." If no such sentence can be written, the output is not yet decision-relevant.
+
+### The "Default to NASA EO" Pattern
+When precipitation, soil moisture, snow, or atmospheric forcing data are needed, proposals default to the NASA EO product (IMERG, SMAP, MODIS, MERRA-2) without acknowledging non-NASA domain-standard alternatives (MRMS, Stage IV, AORC, HRRR) that may be better suited to the application's spatial / temporal scale. Domain reviewers know these alternatives and notice when they are not addressed.
+
+**Mitigation.** Add a brief EO-product comparison paragraph: candidate products, native resolution / latency, strengths, limitations for the specific use case, why the chosen product wins (or why a fusion is proposed). NASA reviewers want NASA assets justified, not assumed.
+
 ---
 
 ## Pre-Submission Self-Review Prompts
@@ -367,6 +500,19 @@ Run through these questions before submission. Each maps to a real reviewer ques
 7. Name the end user in one sentence. Name the decision in one sentence. State what changes about that decision after the project. Could a non-expert summarize all three in one paragraph?
 8. Is the end user a decision-maker, or only a data intermediary? If only an intermediary, who decides?
 9. What is the end user's role in evaluation — not just initial requirements, but in scoring outputs?
+10. For each tool output, write a Decision-to-Action sentence: "When the output indicates X, the end user is authorized to take action Y within time window Z." If you cannot write that sentence for an output, the output is not yet decision-relevant.
+11. Does the dissemination plan name end-user community channels (local/state conferences, professional gatherings) — not only academic venues?
+12. Have prior successes with this or similar end users been described with evidence (named prior projects, outcomes, dates)?
+
+### Research Questions and Hypotheses
+13. Are the research questions unique (no accidental duplicates)? Is every RQ answered by at least one task? Does every RQ have funded effort and named expertise behind it?
+14. Are hypotheses stated as testable predictions, not only open-ended questions?
+
+### Data Inputs and Domain Specifics
+15. For each NASA EO product chosen: have non-NASA domain-standard alternatives in the same niche been acknowledged and compared? If the NASA product is coarser, is there a bias-correction / downscaling task?
+16. For any AI / generative / super-resolution model proposed: how is the well-known underestimation of extreme events addressed (tail-aware loss, tail-explicit validation, conditional sampling)?
+17. For any non-traditional data source (crowdsourced, citizen-science, social-media): what is the collection pipeline, deduplication strategy, accuracy assessment, and prior-use evidence?
+18. For any physics-based hydrodynamic / hydrologic / slope-stability model: are the physical input data sources (bathymetry, structures, DEM, soil, land cover) explicitly named?
 
 ### Metrics Justification
 10. For each numerical target (resolution, latency, accuracy, lead time, speedup), what is the baseline, why this threshold, and how is it measured?
@@ -391,10 +537,15 @@ Run through these questions before submission. Each maps to a real reviewer ques
 21. Does the budget reconcile with the work plan? Pick a task and confirm the personnel-months allocated match what its scope requires.
 22. Are forecast windows, spatial resolutions, and temporal cadences consistent with the hazard dynamics being addressed?
 23. Are the same end users, decisions, and metrics referenced consistently across DMA, Anticipated Results, Tasks, Transition Plan, and ES2A sections?
+24. Does the PI have visible funded time? If not, is the unfunded effort explicitly justified?
+25. Does every budget line item have an unambiguous purpose reconstructable from the narrative? (Spot-check the most generic-looking line.)
+26. Are workshops and stakeholder activities budgeted, not just promised?
+27. Does the risk-mitigation section avoid undercutting the motivation for any deliverable? Read each risk and ask: "If this argument is true, does it weaken the case for one of our own components?"
+28. For multi-component proposals: is the readiness detail uniform across all components, or does the unevenness suggest some components are less mature?
 
 ### Reviewer Empathy
-24. Read the proposal as if you have read 14 others today and have 30 minutes for this one. What do you remember? What is the one-sentence summary?
-25. What would you, as a reviewer, write as the *Major Weakness*? Has that weakness been addressed in the text?
+29. Read the proposal as if you have read 14 others today and have 30 minutes for this one. What do you remember? What is the one-sentence summary?
+30. What would you, as a reviewer, write as the *Major Weakness*? Has that weakness been addressed in the text?
 
 ---
 
