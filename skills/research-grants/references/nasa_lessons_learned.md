@@ -549,9 +549,55 @@ Run through these questions before submission. Each maps to a real reviewer ques
 
 ---
 
+## Post-Award Implementation Pitfalls (from NASA Guidebook 2026)
+
+The following challenges and failure scenarios are drawn from the official NASA Earth Science Applications Guidebook (June 2026). While they occur after award, understanding them **during proposal writing** helps you anticipate and address them in your transition plan, risk section, and project management narrative.
+
+### Common Application Hurdles
+
+**Institutional Barriers:**
+- **Bureaucracy** — slow or multilayered decision-making processes in the user's organization may inhibit progress; budget time to navigate approvals
+- **Cost-sharing requirements** — may be a stumbling block for some users; clarify cost-sharing expectations early
+- **Conflicting data environments** — user institutions may restrict certain platforms, datasets, or AI tools; verify compatibility during proposal development
+- **Funding delays** — resources do not always come through on schedule; build buffer into timeline
+- **Publish or perish** — academic pressure to publish or secure new funding competes with implementation priorities; acknowledge in management plan
+- **Project lifecycle mismatch** — the application may require more time than the typical 2–3 year ROSES funding cycle; address in transition plan
+
+**Partnership Pitfalls:**
+- **Changing circumstances** — user priorities shift with leadership and staff changes; project buy-in may decline
+- **Weak collaboration** — neglected relationships, inconsistent project management, and poor communication undermine outcomes
+- **Partner burnout** — users juggling many responsibilities may lose enthusiasm or miss commitments
+- **Partner expectations** — users may be disappointed if the application takes longer or doesn't deliver expected results
+- **Human capacity** — frequent staff turnover requires repeated training, straining project resources
+- **Data management sustainability** — users may struggle to fund post-project cloud computing, infrastructure, and skills maintenance
+
+**Proposal implication**: Address the most likely hurdles in your risk-mitigation section. For each, name the mitigation strategy (not just "we will adapt"). Budget for the costs of navigating hurdles (travel for unplanned meetings, extra training sessions, technical support during adoption).
+
+### Real-World Failure Scenarios
+
+These three case studies from funded NASA Earth Action projects illustrate how teams adapted when things went wrong. Reference them in risk sections to demonstrate awareness of real operational challenges.
+
+**Scenario 1: Concerns Over Uncertainty (Land Use Permits)**
+A government agency traditionally used parametric statistics on field data for land-use permit decisions. The NASA team integrated satellite data, enabling assessment of far larger areas — but remote sensing requires different statistical methods and always reports error metrics. The agency feared that the reported uncertainty would create a pathway for legal challenges.
+- **Resolution**: The scientists worked directly with the agency manager to explain the statistics, developed a statistically-valid framework based on remote sensing data, and published their approach in trade journals the agency reads (e.g., rangeland society journals).
+- **Lesson for proposals**: If the end user operates in a regulatory or legal environment, address how uncertainty will be communicated and how statistical frameworks will be adapted for their decision context.
+
+**Scenario 2: Unexpected Results (Grassland Monitoring)**
+A project used vegetation indices (NDVI, SATVI) from Landsat and MODIS to assess sustainability practices on grasslands. The bare ground was so homogenous that the data lacked specificity for the requested indicators — trends were visible but detailed indicator-level data was not achievable.
+- **Resolution**: The team identified different but valuable questions the data could address, and used phenological types and climate data to align remote sensing with ground data in areas with clearer signal.
+- **Lesson for proposals**: If your application relies on satellite data in challenging environments (homogenous terrain, persistent cloud cover, sparse ground truth), include a fallback analysis strategy in your risk section.
+
+**Scenario 3: Data Failure (GPM Calibration → Insurance Payouts)**
+A parametric insurance company used GPM satellite rainfall data with automated threshold-based payouts. The GPM Core Observatory experienced a short-term calibration problem, producing readings of >900mm/day across multiple sites. The automated system generated payout reports based on the erroneous data.
+- **Resolution**: The team used a backup data source (NOAA CPC rain gauge analysis), reran calculations, communicated openly with partners, built an automated quality-control system to flag future anomalies, and established communication protocols as standard operations.
+- **Lesson for proposals**: For any decision-support tool that triggers automatic actions (alerts, payouts, evacuations), include a data quality control layer with backup sources and anomaly detection. Address this explicitly in your technical approach.
+
+---
+
 ## Cross-References
 
 - **For NASA-specific structural guidance**: `nasa_guidelines.md`
+- **For Earth Action guidebook (user engagement, impact framework, co-development)**: `nasa_earth_action_guidebook.md`
 - **For specific aims / objective writing**: `specific_aims_guide.md`
 - **For broader impacts / societal value**: `broader_impacts.md`
 - **For budget preparation**: see relevant section of `nasa_guidelines.md`

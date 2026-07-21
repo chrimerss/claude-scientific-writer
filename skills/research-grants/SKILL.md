@@ -124,12 +124,17 @@ For detailed guidance on creating schematics, refer to the scientific-schematics
 - Earth Science to Action (ES2A) strategic alignment required
 - Engagement/co-development with identified end users is critical
 - Open Science and Data Management Plan (OSDMP) required
+- **Five-task user engagement sequence**: Know the Territory → Reach Out and Listen → Frame the Challenge Together → Co-design a Solution → Formalize the Proposal
+- **Three building blocks**: Relationships (pre-solicitation), Listening (experiential questioning), Fit Science to Problem (not vice versa)
+- **Impact framework**: Use → Action → Benefit (proposals must articulate all three tiers, not just outputs)
+- **EA-specific budget categories**: User engagement/workshops, Capacity development, Transition activities, Evaluation/metrics
 - Varies by program element (A.08 Water Resources, A.09 Foundation Models, etc.)
 
 For detailed guidance, refer to:
-- `references/nasa_guidelines.md` — NASA ROSES structural guide, ARL framework, ES2A alignment, and high-level strategic insights
-- `references/nasa_lessons_learned.md` — recurring pitfalls and reviewer critique patterns distilled from prior submissions; consult **before drafting** and **during proposal review** as a pre-submission checklist
+- `references/nasa_guidelines.md` — NASA ROSES structural guide, ARL framework, ES2A alignment, 18 strategic insights from prior submissions
+- `references/nasa_lessons_learned.md` — recurring pitfalls, reviewer critique patterns, post-award implementation pitfalls, pre-submission checklist; consult **before drafting** and **during proposal review**
 - `references/nasa_roses_a8_funded_patterns.md` — patterns synthesized from funded ROSES-2025 A.8 Water Resources Applications abstracts (12 recurring traits, section-by-section pattern map, NASA EO asset selection matrix, Type 1 vs Type 2 decision tree, pre-submission checklist, anonymized worked template); load **before drafting any NASA Applied-program abstract or S/T/M section** (A.8, A.9, A.36, A.37)
+- `references/nasa_earth_action_guidebook.md` — distilled NASA Earth Science Applications Guidebook (June 2026): user engagement framework, co-development methods (HCD, SDM), impact definition, team composition, EA-specific budgets, transition & sustainability planning, ARL pathway, and implementation challenge taxonomy; consult **during proposal development** for user-engagement language, impact framing, and co-development planning
 
 ## Core Components of Research Proposals
 
@@ -988,9 +993,10 @@ This skill includes comprehensive reference files covering specific aspects of g
 - `references/nih_guidelines.md`: NIH mechanisms, review criteria, and submission requirements
 - `references/doe_guidelines.md`: DOE programs, emphasis areas, and application procedures
 - `references/darpa_guidelines.md`: DARPA BAAs, program offices, and proposal strategies
-- `references/nasa_guidelines.md`: NASA ROSES program structure, ARL framework, DAPR, ES2A alignment, applied science proposal strategies (A.08, A.09, etc.), and high-level strategic insights distilled from prior submissions
-- `references/nasa_lessons_learned.md`: recurring pitfalls and reviewer critique patterns from prior NASA submissions (pre-submission checklist, top-10 reviewer critiques, section-by-section annotated guidance, Socratic self-review prompts)
+- `references/nasa_guidelines.md`: NASA ROSES program structure, ARL framework, DAPR, ES2A alignment, applied science proposal strategies (A.08, A.09, etc.), and 18 strategic insights distilled from prior submissions
+- `references/nasa_lessons_learned.md`: recurring pitfalls, reviewer critique patterns, post-award implementation pitfalls and failure scenarios, pre-submission checklist, top-10 reviewer critiques, section-by-section annotated guidance, and Socratic self-review prompts from prior NASA submissions
 - `references/nasa_roses_a8_funded_patterns.md`: 12 recurring traits, section-by-section pattern map, NASA EO asset selection matrix, Type 1 vs Type 2 decision tree, pre-submission checklist, and anonymized worked template — synthesized from funded ROSES-2025 A.8 Water Resources Applications abstracts; transfer well to A.9, A.36, A.37 and other Applied program elements
+- `references/nasa_earth_action_guidebook.md`: distilled NASA Earth Science Applications Guidebook (June 2026, 84 pp.) — covers ES2A strategy, five-task user engagement framework, three building blocks, co-development methods (HCD, SDM), impact definition (Use → Action → Benefit), team composition for EA, EA-specific budget categories, strong proposal checklist, transition & sustainability planning (five pillars), implementation challenge taxonomy and real-world failure scenarios, ARL pathway details, and communications/storytelling framework
 - `references/broader_impacts.md`: Strategies for compelling broader impacts statements
 - `references/specific_aims_guide.md`: Writing effective specific aims pages
 - `references/budget_preparation.md`: Budget development and justification
