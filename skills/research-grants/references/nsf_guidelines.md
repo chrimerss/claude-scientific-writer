@@ -247,15 +247,27 @@ NSF uses two equally weighted criteria for all proposals:
 - Justify any restrictions on data sharing
 - Plan for data preservation beyond project period
 
-### Postdoctoral Researcher Mentoring Plan (1 page max)
+### Mentoring Plan (1 page max)
 
-**Required if funding postdocs**
+**Required if funding Postdoctoral Researchers OR Graduate Students** (expanded under PAPPG and the CHIPS and Science Act).
 
 **Must address**:
-- Career development objectives
-- Mentoring activities (research, teaching, professional skills)
-- Metrics for success
-- Mentoring plan should be specific, not generic
+- Career development objectives and orientation
+- Individual Development Plans (IDPs) for each mentee
+- Mentoring activities (technical skills, research rigor, teaching, grant writing, ethics/RCR, open science)
+- Specific mentoring and supervision mechanisms
+- Metrics for success and annual assessment
+
+> [!CAUTION]
+> **Zero Tolerance for Ghost Personnel / Template Boilerplate**: Ensure the Mentoring Plan ONLY mentions personnel categories that are actually requested in your budget. If you budget only Graduate Research Assistants (GRAs), do NOT leave boilerplate text about mentoring "Postdocs" (and vice versa). Reviewers scrutinize this and will flag it as an indicator of sloppy proposal preparation.
+
+### Letters of Collaboration (Supplementary Documents)
+
+**Format**: Must follow the standard, unembellished 1-sentence NSF PAPPG template unless the solicitation explicitly allows project-specific letters:
+> *"If the proposal submitted by Dr. [PI Name] entitled '[Proposal Title]' is selected for funding by NSF, it is my intent to collaborate and/or commit resources as detailed in the Project Description or the Facilities, Equipment and Other Resources section of the proposal."*
+
+> [!WARNING]
+> **Strict 1-to-1 Matching with Narrative**: Every external partner, municipality, industry collaborator, or tribal nation named in the Project Description MUST have a signed Letter of Collaboration in the Supplementary Documents. Claiming a partnership without a supporting letter will be penalized by reviewers as an unsubstantiated claim.
 
 ## Special NSF Proposal Types
 
@@ -486,85 +498,70 @@ NSF uses two equally weighted criteria for all proposals:
 
 **Tracking**: Proposals reviewed previously may be assigned same reviewers (sometimes)
 
-## Recent NSF Policy Updates
+## Interdisciplinary & AI-for-Science Proposals (CAIG, RISE, HDR, AI Institutes)
 
-### 2023-2024 Changes
+Proposals sitting at the intersection of AI/Cyberinfrastructure and Domain Science (Geosciences, Engineering, Biology, Materials) face unique dual-panel scrutiny from both computational experts and domain specialists.
 
-1. **Data Management and Sharing Plan**: Now required for all proposals (2 pages max)
-2. **Biographical Sketch Format**: Updated to include "Products" instead of "Publications"
-3. **Open Science**: Increased emphasis on open-access publications and data
-4. **Plan for Dissemination**: Some programs require explicit dissemination plans
-5. **Mentoring Plans**: Enhanced requirements for postdoc mentoring plans
+### Key Success Principles for AI+Science Proposals:
+1. **Defend "Why LLMs / AI?" vs. Classical ML & Numerical Solvers**: Clearly explain why domain problems cannot be addressed more simply by classical deep learning (e.g., LSTMs, GNNs) or traditional numerical optimizers (e.g., SCE-UA, MCMC).
+2. **Prevent "Reward Hacking" and Equifinality**: When using Reinforcement Learning or simulation feedback (RLSF), explicitly incorporate multi-objective, physical mass-balance constraints to prevent the AI from gaming the reward metric with unphysical parameters.
+3. **Isolate Scientific Discovery from Model Structural Error**: Avoid testing fundamental laws of nature using only a single conceptual simulator. Use multi-model benchmarks or explicitly separate simulator artifacts from physical scaling behavior.
+4. **Compute Feasibility Arithmetic**: Include explicit GPU-hour and storage calculations demonstrating that requested ACCESS, NCAR, or CloudBank credits realistically support model pre-training, fine-tuning, and simulation loops.
+5. **Responsible AI Deployment & Human-in-the-Loop Guardrails**: Never claim unvalidated natural language models will let non-experts generate high-stakes hazard or engineering reports without certified experts in the loop.
 
-### NSF Priorities (2024-2025)
+---
 
-- **Climate and Clean Energy**: Climate change mitigation and adaptation
-- **Quantum Information Science**: Quantum computing, sensing, networking
-- **AI and Machine Learning**: Trustworthy AI, AI for science
-- **Biotechnology**: Synthetic biology, bioengineering
-- **Microelectronics**: Semiconductor research and workforce
-- **STEM Education**: Broadening participation, innovative pedagogy
-- **Convergence Accelerators**: Use-inspired research with pathway to impact
+## Reviewer Red Flags & Lessons Learned
 
-## NSF Big Ideas and Special Initiatives
+For comprehensive analysis of reviewer mental models and panel failure modes distilled from recent NSF proposals (including CAIG / GEO-CISE), see:
+👉 **[`references/nsf_lessons_learned.md`](file:///Users/allen/Documents/Python/claude-scientific-writer/skills/research-grants/references/nsf_lessons_learned.md)**
 
-### NSF "Big Ideas"
+### Top 5 NSF Red Flags to Avoid:
+1. ❌ **Grand Philosophical Overreach**: Claiming an LLM prompt/fine-tuning pipeline "solves reductionism vs. holism" or "reveals universal physical laws" without an explicit mathematical/symbolic derivation engine.
+2. ❌ **Missing Letters of Collaboration**: Naming community partners, municipalities, or tribal nations in the narrative without including signed Letters of Collaboration in the Supplementary Documents.
+3. ❌ **Ghost Personnel & Boilerplate Artifacts**: Mentioning Postdoc mentoring in the Mentoring Plan when only Graduate Students are budgeted.
+4. ❌ **Scope vs. Team Budget Mismatch**: Assigning massive tasks to collaborative co-PIs while budgeting only fractions of a month of summer salary.
+5. ❌ **Unsubstantiated Scale Thresholds**: Defining benchmark bins without geological, ecological, or physical justification.
 
-1. **Harnessing the Data Revolution (HDR)**
-2. **The Future of Work at the Human-Technology Frontier**
-3. **Navigating the New Arctic**
-4. **Windows on the Universe**
-5. **The Quantum Leap**
-6. **Understanding the Rules of Life**
-7. **Mid-scale Research Infrastructure**
-
-### Major NSF Initiatives
-
-- **National AI Research Institutes**: $20M over 5 years per institute
-- **Science and Technology Centers (STCs)**: Large-scale collaborative centers
-- **Engineering Research Centers (ERCs)**: Engineering innovation ecosystems
-- **Materials Research Science and Engineering Centers (MRSECs)**: Materials research
-- **NSF Graduate Research Fellowship Program (GRFP)**: Student fellowships
+---
 
 ## Tips for Competitive NSF Proposals
 
 ### Do's
 
-✅ **Start with specific aims/objectives** - Crystal clear research goals
-✅ **Make broader impacts substantive** - Specific activities, not platitudes
-✅ **Use figures effectively** - Conceptual diagrams, preliminary data, timelines
-✅ **Be realistic about scope** - Achievable within 3-5 years
-✅ **Address both review criteria explicitly** - Don't make reviewers search
-✅ **Get external feedback** - Mock review before submission
-✅ **Follow formatting requirements exactly** - Auto-rejection for non-compliance
-✅ **Explain jargon and acronyms** - Panel members may not be in your subfield
-✅ **Integrate research and education** - Show natural connections
-✅ **Demonstrate team qualifications** - Track record in proposed area
+✅ **Start with specific aims/objectives** - Crystal clear research goals  
+✅ **Make hypotheses directional and falsifiable** - Assert clear causal mechanisms that can be disproven  
+✅ **Make broader impacts substantive** - Specific activities, metrics, and institutional partnerships  
+✅ **Include classical control baselines** - Compare modern AI against standard numerical algorithms and classical ML  
+✅ **Use figures effectively** - Conceptual diagrams, preliminary data, workflows, and Gantt charts  
+✅ **Be realistic about scope** - Achievable within 3-5 years with budgeted personnel effort  
+✅ **Reconcile all supplementary documents** - 100% match between narrative, budget, mentoring, and letters  
+✅ **Address both review criteria explicitly** - Distinct Intellectual Merit and Broader Impacts sections  
+✅ **Get external feedback** - Mock panel review before submission  
+✅ **Follow formatting requirements exactly** - PAPPG font, margin, and pagination compliance  
 
 ### Don'ts
 
-❌ **Don't exceed page limits** - Automatic return without review
-❌ **Don't use smaller fonts in figures** - Must be legible
-❌ **Don't make broader impacts generic** - "Train students" is not enough
-❌ **Don't ignore prior NSF support** - Must report if you've had NSF funding
-❌ **Don't be overly ambitious** - Reviewers will see through unrealistic plans
-❌ **Don't skip data management plan** - Required for all proposals
-❌ **Don't forget biosketches for all personnel** - Common mistake
-❌ **Don't submit at deadline** - Technical issues happen
-❌ **Don't ignore program solicitation** - Requirements vary by program
-❌ **Don't assume reviewers know your work** - Provide context
+❌ **Don't overclaim AI discovery** - Distinguish between empirical benchmarking and fundamental law derivation  
+❌ **Don't use single-simulator evaluations** to draw sweeping conclusions about natural systems  
+❌ **Don't deploy high-stakes AI to non-experts** without prominent human-in-the-loop validation  
+❌ **Don't exceed page limits** - Automatic return without review  
+❌ **Don't make broader impacts generic** - "Train students" is not enough  
+❌ **Don't ignore prior NSF support** - Must report all NSF funding for all PIs/co-PIs within 5 years  
+❌ **Don't leave template boilerplate** in Mentoring, DMSP, or Facilities documents  
+❌ **Don't omit required letters** for any organization named in the Project Description  
+❌ **Don't submit at deadline** - Submit 48 hours early to allow AOR correction windows  
 
 ## Resources and Links
 
+- **NSF Lessons Learned & Reviewer Psychology**: [`references/nsf_lessons_learned.md`](file:///Users/allen/Documents/Python/claude-scientific-writer/skills/research-grants/references/nsf_lessons_learned.md)
 - **NSF Homepage**: https://www.nsf.gov
 - **Award Search**: https://www.nsf.gov/awardsearch/
 - **Proposal & Award Policies & Procedures Guide (PAPPG)**: https://www.nsf.gov/publications/pub_summ.jsp?ods_key=pappg
-- **FastLane**: https://www.fastlane.nsf.gov/
 - **Research.gov**: https://www.research.gov/
-- **Broader Impacts Resources**: https://www.nsf.gov/od/oia/special/broaderimpacts/
-- **NSF Funding Statistics**: https://www.nsf.gov/statistics/
+- **Broader Impacts Guide**: [`references/broader_impacts.md`](file:///Users/allen/Documents/Python/claude-scientific-writer/skills/research-grants/references/broader_impacts.md)
 
 ---
 
-**Key Takeaway**: NSF values both scientific excellence (Intellectual Merit) and societal benefit (Broader Impacts) equally. Successful proposals demonstrate innovative, feasible research that advances knowledge while contributing to education, diversity, infrastructure, or societal well-being in specific, measurable ways.
+**Key Takeaway**: NSF values both scientific excellence (Intellectual Merit) and societal benefit (Broader Impacts) equally. Successful proposals demonstrate innovative, feasible research with clear, falsifiable hypotheses, rigorous baselines, realistic budgets, and verifiable institutional and community commitments.
 

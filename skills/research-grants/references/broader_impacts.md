@@ -345,7 +345,31 @@ Be realistic about what you can accomplish with the resources and time available
 
 If proposing extensive broader impacts activities but have no history of such work, reviewers will be skeptical.
 
-✅ Show preliminary efforts, leverage existing programs, include collaborators with relevant expertise, cite successful prior broader impacts work
+✅ Show preliminary efforts, leverage existing programs, include collaborators with relevant expertise, cite successful prior broader impacts work.
+
+### Mistake 8: The "Democratizing High-Stakes AI" Trap (Unsafe Non-Expert Deployment)
+
+❌ "Our agentic AI system will allow non-expert municipal planners, community volunteers, and citizen scientists to run complex flood simulations and generate decision-ready risk reports with simple natural-language prompts."
+
+> [!CAUTION]
+> **Why Reviewers Push Back**: In high-stakes environmental, engineering, or health domains, unvalidated AI models deployed to non-experts without human-in-the-loop (HITL) oversight risk severe hallucinations and catastrophic policy mistakes. Furthermore, data-scarce or vulnerable communities are most at risk of poor model performance.
+
+✅ **How to Frame Correctly**: Frame non-expert interfaces as *exploratory educational tools* or *initial decision-screening aids*. Always include explicit human-in-the-loop workflows requiring domain expert verification, clear uncertainty bounds, audit logs, and transparent data provenance.
+
+### Mistake 9: Naming Partners or Tribal Nations Without Signed Commitment Letters
+
+❌ Mentioning specific community organizations, city agencies, or tribal nations in the narrative (e.g., *"We will partner with the Otoe-Missouria Tribal Nation and train students in CARE Indigenous Data Governance"*) without including a signed Letter of Collaboration in the Supplementary Documents.
+
+> [!WARNING]
+> Reviewers cross-check the text against Supplementary Documents page by page. Any partner named in the Project Description without a corresponding PAPPG-compliant Letter of Collaboration will be flagged as an unsubstantiated claim.
+
+✅ **How to Fix**: Ensure a 100% 1-to-1 match between named organizations in the narrative and signed Letters of Collaboration in the proposal package. If a partnership is still preliminary, describe the engagement protocol generically without naming specific uncommitted entities.
+
+### Mistake 10: Inequitable Collaborative Budgeting & Modest Student Pathways
+
+❌ Promising extensive multi-institutional workforce development and undergraduate training at a partner institution (e.g., a regional university or PUI), but allocating a tiny subaward with insufficient faculty summer salary or zero dedicated student stipends.
+
+✅ **How to Fix**: Provide proportional budget allocations for student stipends, travel, and faculty mentorship time at all collaborative sites, outlining concrete pathways (e.g., student cohorts, structured summer research programs, cross-institutional exchange).
 
 ## Budgeting for Broader Impacts
 

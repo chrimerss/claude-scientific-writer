@@ -73,9 +73,17 @@ For detailed guidance on creating schematics, refer to the scientific-schematics
 - Intellectual Merit + Broader Impacts (equally weighted)
 - 15-page project description limit (most programs)
 - Emphasis on education, diversity, and societal benefit
-- Collaborative research encouraged
-- Open data and open science emphasis
+- Collaborative research encouraged (single proposal or collaborative from multiple institutions)
+- Open data and open science emphasis (Data Management and Sharing Plan required, 2 pages)
+- Mentoring Plan required for Graduate Students AND Postdocs (1 page, zero tolerance for boilerplate/ghost personnel)
+- Letters of Collaboration strictly adherence to PAPPG 1-sentence format (100% 1-to-1 match with all named partners)
 - Merit review process with panel + ad hoc reviewers
+- Interdisciplinary programs (e.g., CAIG, RISE, HDR, AI Institutes) require explicit defense against classical numerical baselines, compute arithmetic feasibility proofs, and safeguards against reward hacking / unphysical parameter compensation.
+
+For detailed guidance, refer to:
+- `references/nsf_guidelines.md` — Comprehensive NSF proposal structures, directorate priorities, CAREER, RAPID, EAGER, and PAPPG compliance
+- `references/nsf_lessons_learned.md` — 10 critical NSF red flags, reviewer mental models, panel dynamics, section-by-section critique map, and pre-submission audit checklist distilled from recent NSF panel reviews
+- `references/broader_impacts.md` — Strategies for substantive, assessed broader impacts and avoiding the "democratizing high-stakes AI" trap
 
 ### NIH (National Institutes of Health)
 **Mission**: Enhance health, lengthen life, and reduce illness and disability
@@ -990,6 +998,7 @@ This skill works effectively with:
 This skill includes comprehensive reference files covering specific aspects of grant writing:
 
 - `references/nsf_guidelines.md`: NSF-specific requirements, formatting, and strategies
+- `references/nsf_lessons_learned.md`: 10 critical NSF red flags, reviewer mental models, panel dynamics, section-by-section critique map, and pre-submission audit checklist distilled from recent NSF panel reviews (including CAIG / GEO-CISE)
 - `references/nih_guidelines.md`: NIH mechanisms, review criteria, and submission requirements
 - `references/doe_guidelines.md`: DOE programs, emphasis areas, and application procedures
 - `references/darpa_guidelines.md`: DARPA BAAs, program offices, and proposal strategies

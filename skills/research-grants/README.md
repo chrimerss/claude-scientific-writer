@@ -108,6 +108,7 @@ For in-depth help on specific components:
 
 ### Agency Guidelines
 - `references/nsf_guidelines.md` - Comprehensive NSF guidance
+- `references/nsf_lessons_learned.md` - NSF reviewer mental models, 10 red flags, panel dynamics, and pre-submission audit checklist
 - `references/nih_guidelines.md` - NIH mechanisms and review criteria
 - `references/doe_guidelines.md` - DOE offices and programs
 - `references/darpa_guidelines.md` - DARPA structure and strategy
